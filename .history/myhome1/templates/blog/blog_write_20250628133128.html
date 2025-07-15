@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body> "/guestbook/save" -->
+    <form name="myforn" action="/blog/save" method="post">
+        {% csrf_token %} 
+        <!-- title:blogform 클래스 meta항목에 있는 fields에 존재 -->
+        제목: <input type="text" name="title" id=""> <br>
+        작성자: <input type="text" name="title" id=""> <br>
+        제목: <input type="text" name="title" id=""> <br>
+        <button type="submit">전송</button>
+    </form>
+</body>
+</html>

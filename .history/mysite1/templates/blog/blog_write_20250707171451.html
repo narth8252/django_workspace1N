@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- /blog/write로 접근할때: 저거 꼭 써줘야함
+     get방식 -->
+    <form action="/blog/write" method="post">
+        {% csrf_token %} <!--이거써줘야 위변조방지 에러막음-->
+        제목: <input type="text" name="title" id="title"><br/>
+        작성자: <input type="text" name="writer" id="writer"><br/>
+        내용: <textarea name="contents" rows="10" cols="80"></textarea>
+
+        <button>등록</button>
+
+    </form>
+        
+    }
+</body>
+</html>

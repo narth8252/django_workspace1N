@@ -1,0 +1,15 @@
+from django import forms
+from .models import Score #form태그랑 model클래스연동
+
+class BlogForms(forms.ModelForm):
+    #Meta클래스: 클래스in클래스(내부클래스)
+    class Meta:
+        #DB에 전달해서 저장할내용만
+        #fields에 있는 요소는 html의 form태그안에 name속성이 다 있어야함
+        model = Score #defalt값인 model변수
+        fields = ['title', 'writer', 'contents']
+        lables = {
+            'title': '제목',
+            'writer': '작성자',
+            'contents': '내용'
+        }

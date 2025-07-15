@@ -1,0 +1,6 @@
+from django.shortcuts import render
+from django.http import HttpRequest, HttpResponse
+# Create your views here.
+
+#HttpRequest -> 클라이언트가 보낸 정보를 받아오는 객체
+#HttpResponse 

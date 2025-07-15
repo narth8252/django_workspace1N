@@ -1,0 +1,22 @@
+# Python
+*.pyc
+__pycache__/
+
+# Django
+*.log
+db.sqlite3
+.env
+
+# 가상환경
+env/
+venv/
+.venv/
+ENV/
+
+# 기타 IDE 관련
+.vscode/
+.idea/
+
+# 정적/미디어 파일
+/static/
+media/

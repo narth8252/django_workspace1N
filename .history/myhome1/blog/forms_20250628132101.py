@@ -1,0 +1,6 @@
+from django import forms
+from blog.models import Blog
+
+#html -> form -> requset.POST.get[""]...
+#html -> form -> requset.POST.get[""]...
+#

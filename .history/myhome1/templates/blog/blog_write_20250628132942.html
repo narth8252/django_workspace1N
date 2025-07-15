@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myforn""/guestbook/save" method="post">
+        {% csrf_token %} 
+        <!-- 내부생성변수:아까setting에서 이부분 에러안뜨게 주석처리해서 안쳐도 되긴함 -->
+        <label for="flower">꽃 이름:</label>
+        <input type="text" name="flower" id="flower"> <br>
+        <button type="submit">전송</button>
+    </form>
+</body>
+</html>
