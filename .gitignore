@@ -7,6 +7,15 @@ __pycache__/
 db.sqlite3
 .env
 
+*.pyc
+__pycache__/
+db.sqlite3
+
+*.log
+.env
+/static/
+media/
+
 # 가상환경
 env/
 venv/
@@ -20,3 +29,4 @@ ENV/
 # 정적/미디어 파일
 /static/
 media/
+
