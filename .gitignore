@@ -1,20 +1,7 @@
-# Python
-*.pyc
+# C:\django_workspace1N폴더에 .gitignore파일(.txt없음)
+# Python bytecode
 __pycache__/
-
-# Django
-*.log
-db.sqlite3
-.env
-
-*.pyc
-__pycache__/
-db.sqlite3
-
-*.log
-.env
-/static/
-media/
+*.py[cod]
 
 # 가상환경
 env/
@@ -22,11 +9,44 @@ venv/
 .venv/
 ENV/
 
-# 기타 IDE 관련
+# Django 관련
+*.log
+db.sqlite3
+db.sqlite3-journal
+local_settings.py
+
+# Static & media files
+/static/
+/media/
+
+# IDE
 .vscode/
 .idea/
 
-# 정적/미디어 파일
-/static/
-media/
+# 테스트 및 타입 검사 캐시
+.pytest_cache/
+.mypy_cache/
 
+# 기타
+*.pot
+*.mo
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# pip logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VS Code 자동저장 히스토리
+**/.history/
